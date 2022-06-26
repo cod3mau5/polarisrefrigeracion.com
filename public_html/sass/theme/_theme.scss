@@ -1,0 +1,411 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #20609e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5490ca;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #103c67;
+}
+
+
+/* HEADER */
+
+.wpb_layerslider_element.wpb_content_element {
+    margin-bottom: 0 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $blue-color;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+    &:focus, &:hover {
+        background: $blue-color;
+        color: $dark-blue;
+    }
+    // padding: 9px 14px 7px 14px;
+    // border-top-left-radius: 20px;
+    // border-top-right-radius: 20px;
+    // background: url('../images/menu_bg1.jpg');
+    @media (min-width: 700px) {
+        background: url('../images/menu_bg1.jpg');
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        font-size: 0.5rem;
+        min-width: 4.8rem;
+        padding: 7px 14px 7px 15px;
+        height: 36px;
+    }
+    @media (min-width: 1000px) {
+        font-size: 0.7rem;
+        min-width: initial;
+        padding: 9px 14px 7px 14px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 0.9rem;
+    }
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+    background: $blue-color;
+    color: $dark-blue;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(0,169,74);
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,169,74, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#navbarNavDropdown {
+    align-self: flex-end;
+}
+
+#header {
+    nav.navbar {
+        background: url('../images/header_bg.jpg');
+        padding-bottom: 0;
+        .container {
+            position: relative;
+            min-height: auto;
+            @media (min-width: 500px) {
+                min-height: 155px;
+            }
+            .navbar-nav {
+                background: #ffffff;
+                @media (min-width: 500px) {
+                    background: initial;
+                }
+                .nav-link {
+                    padding-left: 20px;
+                    @media (min-width: 500px) {
+                        padding-left: 0;
+                    }
+                    @media (min-width: 700px) {
+                        padding-left: 15px;
+                    }
+                }
+            }
+            .navbar-brand {
+                width: 75%;
+                @media (min-width: 400px) {
+                    width: 80%;
+                }
+                @media (min-width: 500px) {
+                    width: auto;
+                }
+            }
+            .phone_numbers {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: none;
+                @media (min-width: 500px) {
+                    display: block;
+                }
+            }
+        }
+    }
+    .social {
+        width: auto;
+        right: 20px;
+        z-index: 999;
+        display: none;
+        bottom: -60px;
+        position: absolute;
+        a {
+            display: inline-block;
+        }
+        @media (min-width: 500px) {
+            display: block;
+        }
+    }
+}
+
+/* TABS */
+.wpb-js-composer .vc_tta-color-grey.vc_tta-style-classic .vc_tta-panel .vc_tta-panel-body {
+    color: #ffffff;
+    background-color: #5799D9 !important;
+}
+.wpb-js-composer .vc_tta-controls-align-left.vc_tta-tabs.vc_tta-tabs-position-top .vc_tta-tabs-container {
+    margin-left: 20px !important;
+}
+
+.wpb-js-composer .vc_tta.vc_tta-shape-rounded .vc_tta-tab>a {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.wpb-js-composer .vc_tta.vc_general .vc_tta-tab>a {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #00437f !important;
+    padding: 5px 22px !important;
+}
+
+.pestanas {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @media (min-width: 700px) {
+        &:after {
+            display: none;
+        }
+    }
+    @media (min-width: 1000px) {
+        margin-bottom: 100px;
+        &:after {
+            position: absolute;
+            content: '';
+            border-color: transparent;
+            border-style: solid;
+            border-radius: 50px;
+            top: 0;
+            right: -20px;
+            background: #27447c;
+            z-index: 5;
+            height: 330px;
+            width: 330px;
+        }
+    }
+    @media (min-width: 1200px) {
+        &:after {
+            height: 500px;
+            width: 500px;
+        }
+    }
+    .wpb_content_element {
+        margin-bottom: 0;
+    }
+    .vc_tta-tabs-container {
+        position: relative;
+        .vc_tta-tab {
+            &.vc_active {
+                a {
+                    color: #ffffff !important;
+                    font-weight: bold;
+                    background: #00903d !important;
+                    font-family: 'Lato', sans-serif;
+                }
+            }
+        }
+    }
+    .vc_tta-panels {
+        color: #fff !important;
+        background-color: #5799D9 !important;
+        .vc_tta-panel {
+            .vc_tta-panel-body {
+                position: relative;
+                z-index: 20;
+                height: auto;
+                @media (min-width: 500px) {
+                    height: 660px;
+                }
+                .wpb_column.vc_column_container.vc_col-sm-6:first-child {
+                    .vc_column-inner {
+                        height: auto;
+                        overflow: auto;
+                        @media (min-width: 500px) {
+                            height: 660px;
+                            overflow: hidden;
+                            overflow-y: scroll;
+                        }
+                    }
+                }
+                p, li {
+                    font-size: 0.85rem;
+                    line-height: 1.1rem;
+                    text-align: justify !important;
+                    font-family: 'Lato', sans-serif;
+                }
+            }
+        }
+    }
+    .wpb_single_image img {
+        padding: 0 20px;
+        border-top-left-radius: 55px;
+    }
+    .wpb_single_image.wpb_content_element.vc_align_left {
+        margin-bottom: 0;
+    }
+    @media (max-width: 500px) {
+        h4.vc_tta-panel-title {
+            font-weight: bold;
+            background: #00903d;
+            font-family: 'Lato', sans-serif;
+            a {
+                span {
+                    color: #ffffff;
+                }
+            }
+        }
+        .wpb_single_image img {
+            margin-top: 30px;
+            padding: 0;
+            border-top-left-radius: 0;
+        }
+    }
+}
+
+.wpb-js-composer .vc_tta.vc_general .vc_tta-tab>a {
+    font-size: 0.8rem ;
+    @media (min-width: 1200px) {
+        font-size: 0.9rem;
+    }
+}
+
+/* HOME */
+.vc_separator.vc_separator_align_center h4 {
+    color: #666666;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+}
+
+h2.woocommerce-loop-product__title {
+    text-align: center;
+    color: #666666;
+}
+
+.btn-outline-primary {
+    color: #666666;
+    border-color: #666666;
+}
+
+.verde {
+    h1 {
+        color: #518E45;
+        font-weight: bold;
+        font-size: 1.8rem;
+        padding-left: 40px;
+        font-family: 'Lato', sans-serif;
+    }
+}
+
+.btn-outline-primary:active, .btn-outline-primary:hover {
+    background: #518E45;
+    color: #ffffff;
+    border: #518E45;
+}
+.productos_home {
+    .woocommerce ul.products li.product {
+        padding: 20px;
+        .price {
+            text-align: center !important;
+        }
+    }
+}
+
+/* DISTRIBUCIONES */
+.distribuciones_container {
+    .pestanas:after {
+        width: 430px;
+        height: 430px;
+    }
+    @media (min-width: 1000px) {
+        .pestanas:after {
+            width: 250px;
+            height: 250px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .pestanas:after {
+            width: 430px;
+            height: 430px;
+        }
+    }
+
+}
+
+
+/* CONTACTO */
+.addressBox {
+    color: #fff;
+    padding: 22px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    border-radius: 40px;
+    background: #5799D9;
+    margin-left: 30px;
+    font-family: 'Lato', sans-serif;
+    width: 80%;
+    @media (min-width: 700px) {
+        width: 80%;
+    }
+    @media (min-width: 1200px) {
+        margin-top: 180px;
+    }
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    p {
+        padding-left: 25px;
+        line-height: 1;
+    }
+}
+
+form.wpcf7-form {
+    label {
+        margin-bottom: 0;
+        color: #666666;
+    }
+}
+.wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 select, .wpcf7 textarea {
+    border: 1px solid #5799D9;
+    border-radius: 0;
+}
+input.wpcf7-form-control.wpcf7-submit {
+    background: #518E45;
+    color: #ffffff;
+    width: auto;
+    border: 0;
+}
+.wpcf7 textarea {
+    height: 180px;
+}
+
+div#woocommerce-wrapper {
+    padding: 0 !important;
+}
+
+div.page-description p {
+    display: none !important;
+}
+/* FOOTER */
+
+#footer {
+    .container-fluid.brands {
+        background: url('../images/brands_bg.jpg');
+    }
+    .container-fluid.footer {
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        background: url('../images/footer_bg.jpg');
+        img {
+            opacity: 0.9;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
