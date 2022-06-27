@@ -172,7 +172,7 @@
         <script src="{{asset('js/lightbox.min.js')}}"></script>
         
         <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcjB5D6m1N4UAcwssY-tmPYLTi2wgF7Uc&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCREbtsKiX1oaKFTOKA-61I3vx61AeRRGA&callback=initMap">
         </script>
         
         <script>
